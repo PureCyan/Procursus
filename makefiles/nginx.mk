@@ -32,7 +32,8 @@ GLOBAL_NGINX_FLAGS := --prefix=$(MEMO_PREFIX)/etc/nginx \
 			           --with-http_auth_request_module \
 			           --with-http_v2_module \
 			           --with-http_dav_module \
-			           --with-http_slice_module
+			           --with-http_slice_module \
+			   	   --with-ipv6
 
 LIGHT_NGINX_FLAGS := $(GLOBAL_NGINX_FLAGS) \
 					   --with-http_addition_module \
